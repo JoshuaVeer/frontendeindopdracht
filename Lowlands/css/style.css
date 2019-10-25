@@ -1,0 +1,322 @@
+@font-face {
+    font-family: solid89;
+    src: url("LLHvH-Solid89Condensed.woff2") format("woff2"),
+        url("LLHvH-Solid89.woff") format("woff");
+}
+
+/*
+@font-face kennis
+Bron: https://www.w3schools.com/cssref/css3_pr_font-face_rule.asp
+Bron: Anna Wilmink
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: solid;
+}
+
+/* Navigatie en header*/
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    box-shadow: inset 0px -14px 8px -4px rgba(0, 0, 0, 1);
+    background-color: #0026cc;
+    overflow-x: scroll;
+}
+
+/* 
+box-shadow kennis
+Bron: https://www.cssmatic.com/box-shadow 
+overflow-x kennis
+Bron: Nino Schelcher
+Hulp bij flex
+Bron: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+nav a {
+    font-size: 1em;
+}
+
+li {
+    padding: 2.5vw;
+}
+
+video {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Body met content*/
+
+main {
+    background-image: url(../img/achtergrond/bodyachtergrond.png);
+    background-size: contain;
+    background-position: center;
+}
+
+button {
+    background-color: #73cd72;
+    border: none;
+    font-family: solid;
+    font-size: 1em;
+    color: white;
+}
+
+#filter {
+    display: none;
+    height: 100%;
+    background-color: limegreen;
+    padding: 10px;
+}
+
+#filter.show {
+    display: block;
+}
+
+#filter button {
+    padding: 10px;
+    margin: 5px;
+    background-color: lawngreen;
+}
+
+#filter button:hover {
+    color: blue;
+}
+
+#toon {
+    width: 100vw;
+    background-color: limegreen;
+    font-size: 1em;
+    padding: 15px;
+}
+
+#toon:hover {
+    color: blue;
+}
+
+h1 {
+    display: none;
+}
+
+article {
+    background-color: #73cd72;
+    box-shadow: inset 0px 1px 18px 4px rgba(0, 0, 0, 1);
+    margin: 10%;
+    padding: 8%;
+}
+
+a {
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: white;
+}
+
+button img {
+    width: 4vw;
+}
+
+
+h2 {
+    font-size: 3vw;
+}
+
+a img {
+    width: 60px;
+}
+
+article a:hover {
+    color: blue;
+}
+
+
+article img {
+    width: 100%;
+}
+
+h3 {
+    display: none;
+}
+
+main section:nth-child(4) {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main section:nth-child(5) {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Grid kennis
+Bron: https://css-tricks.com/snippets/css/complete-guide-grid/
+nth-child kennis    
+bron: Nino Schelcher
+*/
+
+a:hover {
+    color: limegreen;
+}
+
+/*Artiesten detailpagina*/
+#artiest {
+    margin: 0 10%;
+}
+
+#artiest h1 {
+    font-size: 7vw;
+    color: white;
+    display: block;
+}
+
+#artiest h2 {
+    font-size: 2em;
+}
+
+#artiest button img {
+    width: 5vw;
+}
+
+#artiest p {
+    font-family: sans-serif;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+fieldset {
+    max-width: 650px;
+    margin: 60px auto;
+    border-color: blue;
+}
+
+legend {
+    font-size: 1.5em;
+}
+
+#artiest div {
+    margin-top: 20px;
+}
+
+#artiest form p {
+    font-family: solid;
+    margin: 0;
+    font-size: 1em;
+}
+
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: black;
+    border-width: 1px;
+    background-color: #73cd72;
+    width: 100%;
+    height: 30px;
+}
+
+input[type=radio] {
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+}
+
+div:last-child {
+    text-align: center;
+}
+
+input[type=submit] {
+    background-color: lime;
+    border-bottom: none;
+    width: 200px;
+    height: 50px;
+    font-family: solid;
+    font-size: 1em;
+}
+
+input:focus {
+    background-color: palegreen;
+}
+
+/*Input type selectoren
+Bron: https://www.bitdegree.org/learn/css-form*/
+
+/*Footer*/
+footer ul {
+    box-shadow: none;
+    justify-content: flex-start;
+}
+
+footer a {
+    font-size: 1em;
+}
+
+li p {
+    color: white;
+}
+
+footer ul:nth-child(3) {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+}
+
+footer img {
+    width: 60%;
+}
+
+/*Media query */
+
+@media (max-width: 1200px) {
+    main section:nth-child(5) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    main section:nth-child(4) {
+        grid-template-columns: 1fr;
+    }
+
+    main section:nth-child(5) {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
+    button img {
+        width: 50px;
+    }
+
+    #toon {
+        font-size: 1.1em;
+    }
+
+    #artiest h2 {
+        font-size: 1em;
+    }
+
+    #artiest p {
+        font-size: 2.5vw;
+    }
+
+    footer img {
+        width: 80%;
+    }
+
+    footer a {
+        font-size: 0.8em;
+    }
+}
